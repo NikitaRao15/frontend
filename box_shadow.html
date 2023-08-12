@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        :root{
+            --primary-color:orange;
+    --custom-width:400px;
+    --custom-height:1220px;
+        }
+.container{
+    background-color: rgb(171, 227, 227);
+    /* height:900px; */
+    height: var(--custom-height);
+    border:3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    /* --primary-color:orange;
+    --custom-width:400px; */
+    /* background-color: brown; */
+    background-color: var(--primary-color);
+    height:300px;
+    /* width:300px; */
+    width:var(--custom-width);
+    border:1px solid black;
+    margin:1px;
+    padding:5px;
+    /* box-shadow:-20px -50px rgb(90,50,0);
+    box-shadow:100px 150px 40px black; */
+    /* box-shadow: 10px 15px  5px 20px rgb(84, 12, 50);*/
+    /* box-shadow:inset 10px 15px rgb(213, 232, 42); */
+    box-shadow:-10px 15px black,15px -12px yellow;
+
+}
+#head1{
+    text-shadow: 20px 3px   rgb(28, 189, 28),40px 5px red,50px 7px purple;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+    <img src="/images/download.jpeg" >
+    <h1 id="head1">welcome to box shadow learning</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis enim est nesciunt ipsam fugit expedita cupiditate aut itaque reiciendis repudiandae similique aliquid dolor suscipit esse consequatur pariatur sint ea.</p>
+</div>
+    </div>
+</body>
+</html>
